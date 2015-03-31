@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp">
+
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="#FAFAFA"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/close"
+            />
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+        </Button>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Altrix"
+        android:id="@+id/judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoPenyakitButton"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:background="@mipmap/ic_launcher"
+        android:longClickable="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/artikelButton"
+        android:baselineAlignBottom="false"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignWithParentIfMissing="false"
+        android:longClickable="false"
+        android:cropToPadding="false"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/rumahSakitButton"
+        android:layout_alignStart="@+id/rumahSakitButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rumahSakitButton"
+        android:layout_below="@+id/artikelButton"
+        android:layout_marginTop="20dp"
+        android:cropToPadding="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="50dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="150dp"
+        android:layout_alignTop="@+id/infoPenyakitButton"
+        android:layout_below="@+id/infoPenyakitButton"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginRight="50dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutUsButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignTop="@+id/artikelButton"
+        android:layout_alignBottom="@+id/artikelButton"
+        android:layout_marginRight="50dp"
+        android:background="@mipmap/ic_launcher"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bmiButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rumahSakitButton"
+        android:layout_alignTop="@+id/rumahSakitButton"
+        android:layout_marginRight="50dp"
+        android:background="@mipmap/ic_launcher"
+        android:baselineAlignBottom="true" />
+
+</RelativeLayout>

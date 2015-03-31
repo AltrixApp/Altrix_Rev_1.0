@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/widget51"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:theme="@android:style/Theme.Dialog"
+        >
+        <ListView
+            android:textColor="#000000"
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            />
+    </RelativeLayout>
+</LinearLayout>

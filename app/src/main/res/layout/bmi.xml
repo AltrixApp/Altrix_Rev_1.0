@@ -1,0 +1,56 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#b8e4fb"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Body Mass Index (BMI)" />
+
+    <TextView
+        android:text=""
+        />
+
+    <TableRow>
+        <TextView android:text=" Tinggi Badan (dalam meter) :"
+            android:textColor="#000000" />
+        <EditText android:id="@+id/tinggi"
+            android:inputType="numberSigned|numberDecimal" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text=" Berat Badan (kg) :"
+            android:textColor="#000000" />
+        <EditText android:id="@+id/berat"
+            android:inputType="numberSigned|numberDecimal" />
+    </TableRow>
+
+    <Button android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:onClick="hitung"
+        />
+
+    <TextView
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text=""
+        />
+
+</TableLayout>
